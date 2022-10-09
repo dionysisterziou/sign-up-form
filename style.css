@@ -1,9 +1,33 @@
 @font-face {
-    font-family: Greconian;
-    src: url(./fonts/Greconian.ttf);
+  font-family: Greconian;
+  src: url(./fonts/Greconian.ttf);
 }
 
-p {
-    color: red;
-    font-family: Greconian, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Greconian, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  overflow: hidden;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.main-container-right {
+  flex: auto;
+}
+
+.background-image {
+  height: 100vh;
+  width: 600px;
 }
