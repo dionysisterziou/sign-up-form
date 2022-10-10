@@ -23,11 +23,50 @@ body {
   flex-direction: row-reverse;
 }
 
+.main-container-left {
+  position: relative;
+}
+
 .main-container-right {
   flex: auto;
 }
 
 .background-image {
   height: 100vh;
-  width: 600px;
+  width: 550px;
 }
+
+.logo-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.logo-image {
+  height: 130px;
+  margin: auto 0;
+  width: 130px;
+}
+
+.logo-text {
+  color: white;
+  font-size: 3rem;
+}
+
+/* .logo-text {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 3rem;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+} */
