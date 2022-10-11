@@ -19,8 +19,12 @@ body {
 }
 
 .main-container {
-  display: flex;
   flex-direction: row-reverse;
+}
+
+.main-container,
+.row {
+  display: flex;
 }
 
 .main-container-left {
@@ -33,7 +37,7 @@ body {
 
 .background-image {
   height: 100vh;
-  width: 550px;
+  width: 600px;
 }
 
 .logo-container {
@@ -59,14 +63,19 @@ body {
   font-size: 3rem;
 }
 
-/* .logo-text {
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  font-size: 3rem;
-  left: 50%;
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-} */
+form {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.header-container,
+.row {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}

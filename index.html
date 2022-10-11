@@ -14,39 +14,45 @@
     <div class="main-container">
         <div class="main-container-right">
             <form action="#" method="post">
-                <h1>Become Greek!</h1>
-
-                <div>
-                    <label for="first_name">First Name</label>
-                    <input type="text" id="first_name" name="first_name">
+                <div class="grid-item header-container">
+                    <h1>Become Greek!</h1>
                 </div>
 
-                <div>
-                    <label for="last_name">Last Name</label>
-                    <input type="text" id="last_name" name="last_name">
+                <div class="row">
+                    <div class="grid-item">
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" name="first_name">
+                    </div>
+
+                    <div class="grid-item">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="last_name">
+                    </div>
                 </div>
 
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
+                <div class="row">
+                    <div class="grid-item">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="grid-item">
+                        <label for="phone_number">Phone number</label>
+                        <input type="tel" id="phone_number" name="phone_number">
+                    </div>
                 </div>
 
-                <div>
-                    <label for="phone_number">Phone number</label>
-                    <input type="tel" id="phone_number" name="phone_number">
+                <div class="row">
+                    <div class="grid-item">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <div class="grid-item">
+                        <label for="confirm_password">Confirm password</label>
+                        <input type="password" id="confirm_password" name="confirm_password">
+                    </div>
                 </div>
 
-                <div>
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password">
-                </div>
-
-                <div>
-                    <label for="confirm_password">Confirm password</label>
-                    <input type="password" id="confirm_password" name="confirm_password">
-                </div>
-
-                <div>
+                <div class="grid-item">
                     <button type="submit">Become Greek</button>
                 </div>
             </form>
