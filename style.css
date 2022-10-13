@@ -105,6 +105,7 @@ input {
   border: 2px solid #E5E7EB;
   border-radius: 5px;
   color: inherit;
+  font-size: 1.4rem;
 }
 
 input:focus {
@@ -112,3 +113,13 @@ input:focus {
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
   outline: none;
 }
+
+.error {
+  border-color: red;
+}
+
+/* .error::after {
+  font-size: 1rem;
+  color: red;
+  content: '* Password do not match';
+} */
