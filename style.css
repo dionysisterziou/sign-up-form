@@ -34,16 +34,10 @@ body {
   display: flex;
 }
 
+/* Left side */
+
 .main-container-left {
   position: relative;
-}
-
-.main-container-right {
-  display: flex;
-  flex: auto;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 50px;
 }
 
 .background-image {
@@ -72,6 +66,16 @@ body {
 .logo-text {
   color: var(--main-color);
   font-size: 3rem;
+}
+
+/* Right side */
+
+.main-container-right {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 50px;
 }
 
 form {
