@@ -16,24 +16,25 @@
             <form action="#" method="post">
                 <div class="grid-item header-container">
                     <h1>Become Greek!</h1>
+                    <small>Sign up now and get the ancient DNA for free!</small>
                 </div>
 
                 <div class="row">
                     <div class="grid-item">
-                        <label for="first_name">First Name</label>
-                        <input type="text" id="first_name" name="first_name">
+                        <label for="first_name">First Name *</label>
+                        <input type="text" id="first_name" name="first_name" required>
                     </div>
 
                     <div class="grid-item">
-                        <label for="last_name">Last Name</label>
-                        <input type="text" id="last_name" name="last_name">
+                        <label for="last_name">Last Name *</label>
+                        <input type="text" id="last_name" name="last_name" required>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="grid-item">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
                     </div>
                     <div class="grid-item">
                         <label for="phone_number">Phone number</label>
@@ -43,12 +44,12 @@
 
                 <div class="row">
                     <div class="grid-item">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password">
+                        <label for="password">Password *</label>
+                        <input type="password" id="password" name="password" class="error" required>
                     </div>
                     <div class="grid-item">
-                        <label for="confirm_password">Confirm password</label>
-                        <input type="password" id="confirm_password" name="confirm_password">
+                        <label for="confirm_password">Confirm password *</label>
+                        <input type="password" id="confirm_password" name="confirm_password" class="error" required>
                     </div>
                 </div>
 
