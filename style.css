@@ -99,3 +99,15 @@ button {
   cursor: pointer;
   padding: 5px;
 }
+
+input {
+  background: none;
+  border: 2px solid #E5E7EB;
+  border-radius: 5px;
+}
+
+input:focus {
+  border-color: var(--secondary-color);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
