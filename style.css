@@ -127,8 +127,8 @@ label[for='password'] {
   flex-direction: column;
 }
 
-[for='password']::after {
+/* [for='password']::after {
   font-size: 0.8rem;
   color: red;
   content: '* Passwords do not match';
-}
+} */
