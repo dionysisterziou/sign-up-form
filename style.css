@@ -122,8 +122,13 @@ input:focus {
   border-color: red;
 }
 
-/* .error::after {
-  font-size: 1rem;
+label[for='password'] {
+  display: flex;
+  flex-direction: column;
+}
+
+[for='password']::after {
+  font-size: 0.8rem;
   color: red;
-  content: '* Password do not match';
-} */
+  content: '* Passwords do not match';
+}
