@@ -126,3 +126,25 @@ label[for='password'] {
   display: flex;
   flex-direction: column;
 }
+
+/* Footer */
+
+footer {
+  align-items: center;
+  background-color: #66023C;
+  bottom: 0;
+  color: #807F03;
+  display: flex;
+  font-size: 1rem;
+  justify-content: center;
+  left: 0;
+  margin-top: auto;
+  min-height: 50px;
+  position: fixed;
+  width: 100%;
+}
+
+/* Disables Google Translate's pop up box  */
+#gtx-trans {
+  display: none;
+}
