@@ -10,15 +10,16 @@ let passwordConfirmationValue = null;
 
 // Insert text under password input
 sheet.insertRule('label[for="password"]::after { content: "* Passwords do not match"; color: red; font-size: 0.8rem }');
-console.log(sheet);
 
-const check = (event) => {
+const checkInputType = (event) => {
     if (event.target.id === 'password') {
         passwordValue = event.target.value;
     } else {
         passwordConfirmationValue = event.target.value;
     }
+}
 
+const toggleError = (passwordValue, passwordConfirmationValue) => {
     if (passwordValue === passwordConfirmationValue && passwordValue != '' && passwordConfirmationValue != '') {
         password.classList.remove('error');
         passwordConfirmation.classList.remove('error');
@@ -26,11 +27,12 @@ const check = (event) => {
         password.classList.add('error');
         passwordConfirmation.classList.add('error');
     }
+}
 
+const checkErrorExistence = () => {
     if (password.classList.contains('error')) {
         if (!exists) {
             sheet.insertRule('label[for="password"]::after { content: "* Passwords do not match"; color: red; font-size: 0.8rem }');
-            console.log(sheet);
             exists = true;
         }
     } else {
@@ -39,5 +41,11 @@ const check = (event) => {
     }
 }
 
-password.addEventListener('keyup', check);
-passwordConfirmation.addEventListener('keyup', check);
+const checkPassword = (event) => {
+    checkInputType(event);
+    toggleError(passwordValue, passwordConfirmationValue);
+    checkErrorExistence();
+}
+
+password.addEventListener('keyup', checkPassword);
+passwordConfirmation.addEventListener('keyup', checkPassword);
