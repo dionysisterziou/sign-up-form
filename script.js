@@ -10,8 +10,9 @@ let passwordConfirmationValue = null;
 
 // Insert text under password input
 sheet.insertRule('label[for="password"]::after { content: "* Passwords do not match"; color: red; font-size: 0.8rem }');
+console.log(sheet);
 
-function check(event) {
+const check = (event) => {
     if (event.target.id === 'password') {
         passwordValue = event.target.value;
     } else {
@@ -29,10 +30,11 @@ function check(event) {
     if (password.classList.contains('error')) {
         if (!exists) {
             sheet.insertRule('label[for="password"]::after { content: "* Passwords do not match"; color: red; font-size: 0.8rem }');
+            console.log(sheet);
             exists = true;
         }
     } else {
-        sheet.deleteRule('[for="password"]::after');
+        sheet.cssRules[0].style.content = "";
         exists = false;
     }
 }
