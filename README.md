@@ -1,4 +1,4 @@
-# sign-up-form
+# Become Greek
 
 Do you want to be Greek? Now it's your chance! 
 
